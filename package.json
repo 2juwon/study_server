@@ -10,7 +10,10 @@
         "express": "^4.17.1",
         "joi": "^17.4.0"
     },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    },
     "scripts": {
-        "start": "babel-node server.js"
+        "start": "nodemon --exec babel-node server.js"
     }
 }
