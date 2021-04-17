@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import apis from './apis';
+
 const router = express.Router();
-const apis = require('./apis');
 
 router.get('/', (req, res) => {
     res.send('Welcome!!');

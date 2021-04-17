@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import Joi from 'joi';
+
 const router = express.Router();
-const Joi = require('joi');
 
 const validateBody = (keys) => async (req, res, next) => {
     console.log(`body : ${req.body}`);
@@ -29,6 +30,10 @@ const validateBody = (keys) => async (req, res, next) => {
         });
     }
 };
+
+router.get('/', (req, res) => {
+    res.send('Hello~ Auth API!');
+});
 
 router.post('/login', async (req, res) => {
     const schema = Joi.object().keys({
