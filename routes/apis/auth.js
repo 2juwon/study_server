@@ -66,7 +66,7 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/signup', (req, res) => {
-    res.send('not found');
+    res.send('not found🤣');
 });
 
 module.exports = router;
